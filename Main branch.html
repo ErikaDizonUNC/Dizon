@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Registration and Verification</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form id="registrationForm">
+          <label for="name">Full Name:</label>
+          <input type="text"id="name"name="name"required>  
+          <br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email"required>
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <div class="container verification" style="display: none;">
+    <h1>Email Verification</h1>
+    <p> A verification link has been sent to your email address. Please click on the link to verify your account.</p>
+    </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
