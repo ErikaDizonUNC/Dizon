@@ -1,11 +1,24 @@
+// script.js
 function login() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
+  // Your login logic here
+  alert('Login logic to be implemented.');
+}
 
-  // Check credentials (this is a simple example, not secure for real-world use)
-  if (username === "user" && password === "pass") {
-      alert("Login successful!");
+function showRegistrationForm() {
+  document.getElementById('loginForm').style.display = 'none';
+  document.getElementById('registrationForm').style.display = 'block';
+}
+
+function register() {
+  var regUsername = document.getElementById('regUsername').value;
+  var regEmail = document.getElementById('regEmail').value;
+  var regPassword = document.getElementById('regPassword').value;
+
+  // Simple validation, replace this with actual registration logic
+  if (regUsername && regEmail && regPassword) {
+      alert('Registration successful! Check your email for verification.');
+      // Redirect to another page or perform other actions as needed
   } else {
-      alert("Invalid credentials. Please try again.");
+      alert('Please fill in all fields.');
   }
 }
